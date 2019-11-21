@@ -1,0 +1,28 @@
+<?php
+class Rectangle
+{
+public $length =0;
+public $width=0;
+
+public function getPerimeter()
+{
+return (2*($this->length + $this->width));
+}
+
+public function getArea()
+{
+return($this->length * $this->width);
+}
+}
+
+$obj = new Rectangle;
+$obj->length=30;
+$obj->width=20;
+
+echo $obj->length; // Output:30
+echo $obj->width; // Output:20
+
+echo $obj->getPerimeter(); //Output:100
+echo $obj->getArea();//Output:600
+
+?>
